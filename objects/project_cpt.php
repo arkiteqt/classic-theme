@@ -28,13 +28,13 @@ function register_project_cpt(){
     'hierarchical'       => false,
     'menu_position'      => 25,
     'menu_icon'          => 'dashicons-portfolio',
-    'supports'           => array( 'title', 'editor', 'thumbnail')
+    'supports'           => array( 'title', 'editor', 'thumbnail', 'author')
   ));
 
   register_taxonomy('project_tag', 'project', array(
       'hierarchical' => false,
-      'label' => __( 'Tags', 'themobidevco' ),
-      'singular_name' => __( 'Tag', 'themobidevco' ), 
+      'label' => __( 'Tags', 'themobidev' ),
+      'singular_name' => __( 'Tag', 'themobidev' ), 
       'rewrite' => true,
       'query_var' => true
     )
